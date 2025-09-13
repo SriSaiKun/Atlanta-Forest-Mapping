@@ -16,7 +16,7 @@ Here’s how you can get the project up and running:
 4. Run the project:
     -- Open the forest_mapping_project.ipynb file and click Kernel > Restart & Run All.
 
-My Process and Results
+My Process and Results:
     I started with a 1993 aerial photo of Cherokee County from the UGA collection. First, I prepared the image by converting it to grayscale, cropping it to the center, and adding a slight blur to clean it up.
     From there, I tried three different ways to map out the forests. I began with two simple methods: a brightness cutoff (Thresholding) and an automatic pixel sorter (K-Means Clustering). For the final method, I trained a Random Forest model by showing it a few hand-picked examples of what forest and non-forest areas looked like in the image.
     In the end, all three methods worked well and created a map where forests are shown in white, as required. The results from each were pretty similar since they all learned to separate the image's dark and light spots.
